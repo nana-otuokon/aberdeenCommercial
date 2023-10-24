@@ -64,8 +64,11 @@ h5{
 }
 .item-text h4{
     margin-bottom: 30px;
-}
 
+}
+.hero-banner{
+    background-color: #e5b3003d;
+}
 .carousel-caption h5{
     font-size: 45px;
     text-transform: uppercase;
