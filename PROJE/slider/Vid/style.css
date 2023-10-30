@@ -64,8 +64,11 @@ h5{
 }
 .item-text h4{
     margin-bottom: 30px;
-}
 
+}
+.hero-banner{
+    background-color: #e5b3003d;
+}
 .carousel-caption h5{
     font-size: 45px;
     text-transform: uppercase;
@@ -122,6 +125,8 @@ header{
     display: flex;
     align-items: center;
 }
+
+
 
 /* responsive css */
 @media only screen and (min-width: 768px) and (max-width:991px){
