@@ -13,4 +13,12 @@ $(document).ready(function(){
             .show('1000');      
           }
     });
+
+
+$('.filter-item').click(function() {
+    $(this).addClass('active-filter').siblings().removeClass('active-filter');
 });
+
+});
+
+let header = document.querySelector('')
