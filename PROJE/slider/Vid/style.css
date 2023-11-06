@@ -241,6 +241,7 @@ cursor: pointer;
     width:100%;
 }
 .card{
+    
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;

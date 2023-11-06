@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
   
-    
+    <style>
+      .service{
+        width: 100%;
+        min-height: 440px;
+        background: url(service.png);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
+      
+    </style>
 
 </head>
 <body>
@@ -46,20 +58,31 @@
             </div>
             
       </nav>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="service.png" height="100px" class="d-block w-100" alt="...">
-            <div class="carousel-caption ">
-                <h5 style="color: #E5B200;">Aberdeen Commercial Services</h5>
-                <p>Aberdeen Commercial is founded on the ethos of partnering as business support partners among specialized fields</p>
+      <section class="service" id="service">
+        <div class="service-text  text-center container">
+          <h2 style="color: #E5B200; text-decoration-line: none;"class="service-title">Aberdeen Commercial Services</h2>
+          <p style="align-items: center; color: white;">Aberdeen Commercial is founded on the ethos of partnering as business support partners among specialized fields</p>
+        </div>
+
+      </section>
+   
+
+          <div id="about" class="about-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div style="margin-top: 2;"class="col-12 col-lg-10 offset-lg-1 text-center">
+                        <div class="section-header">
+                            <h1>Our Services</h1><br><br>
+                            <p>Aberdeen Commercial is founded on the ethos of partnering as business support partners among specialized fields with a view to widening the scope of services it can offer any organization. In this regard, our solutions are broadly categorized into these distinct areas:</p>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-          
+        </div>
 
           <section id ="services" class ="pt-md-5">
-            <h2 class="text-center my-5"> Our Services </h2>
             <div class = "container">
               <div class ="row gy-3">
                 <div class = "col-md-4">
@@ -140,8 +163,7 @@
             </div>
           </section>
 
-       
-    <footer class="py-5">
+          <footer class="py-5">
             <div class="container">
             <div class="row">
               <div class="col-lg-3 col-sm-6">
@@ -149,27 +171,16 @@
                   <img src="logo.png" alt="">
                   <h5 style="color: rgba(229, 178, 0, 1);">Contact Location</h5>
                   <p style="color: white;">Office Location</p>
-     <form>
-    <h6 style="color: white">Subscribe to our newsletter</h6>
-    <br>
-    <div class="input-group gap-2 mb-3">
-      <input type="text" class="form-control" placeholder="e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-warning" type="button" id="button-addon2">Subscribe</button>
-    </div>
-  </form>
-               </div>
+          <form>
+          <h6 style="color: white">Subscribe to our newsletter</h6>
+          <br>
+          <div class="input-group gap-2 mb-3">
+          <input type="text" class="form-control" placeholder="e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-warning" type="button" id="button-addon2">Subscribe</button>
+          </div>
+          </form>
+                </div>
               </div>
-              <div class="col-6 col-md-2 mb-3">
-                <h5>Services</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Commercial Energy</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal & Regulatory</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capital Contracting</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Capital Proje</a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-              </div>
-        
               <div class="col-6 col-md-2 mb-3">
                 <h5>Section</h5>
                 <ul class="nav flex-column">
@@ -180,7 +191,18 @@
                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
                 </ul>
               </div>
-        
+          
+              <div class="col-6 col-md-2 mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+          
               <div class="col-6 col-md-2 mb-3">
                 <h5>Section</h5>
                 <ul class="nav flex-column">
@@ -212,7 +234,11 @@
             </div>
             </div>
             
+            
           </footer>
-        
+          
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+             
+         
 </body>
 </html>
