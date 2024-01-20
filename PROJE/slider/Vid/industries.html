@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Aberdeen Industries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <style>
+      .about{
+        width: 100%;
+        min-height: 500px;
+        background: url(industry.png);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+       .about-title{
+        font-size: 3.5rem;
+       }
+      
+.card-img-top
+{
+    height: 200px;
+    width:100%;
+}
+.card{
+    
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card:hover{
+    color: white ;
+}
+.card::before{
+content:"";
+position: absolute;
+left: -100%;
+top: 0%;
+background: #121036;
+width: 100%;
+height: 100%;
+transition: 0.5s;
+z-index: -1;
+}
+.card:hover::before{
+    left: 0%;
+}
+.logos-slide{
+ display: inline-block;
+  animation: 35s slide infinite linear;
+}
+.logos-slide img{
+  height: 100px;
+ margin: 10px;
+}
+.logos{
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+}
+.logos:before,
+.logos:after{
+  position: absolute;
+  top:0;
+  width:250px;
+  height: 100%;
+  content: '';
+  z-index: 2;
+
+}
+.logos:before{
+left: 0;
+  background: linear-gradient(to left,(255,255,255,0), white);
+  
+}
+.logos:after{
+right: 0;
+  background: linear-gradient(to right,(255,255,255,0), white);
+  
+}
+@keyframes slide{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%)
+  }
+}
+      .col-md-7{
+        padding: 20px;
+      }
+      .col-md-5{
+        padding: 20px;
+      }
+      .form-control{
+        height: 52px;
+        color: black;
+        font-size: 14px;
+        border-radius: 10px;
+
+      }
+      .bi{
+        font-size: 20px;
+      }
+      .d-flex p{
+        font-size: 18px;
+        padding-left: 18px;
+      }
+    
+.accordion{
+    margin: 0px auto;
+    width: 600px;
+
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius:8px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    6px 6px 10px -1px rgba(255,255,255,0.7);
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+label::before{
+    content: '+' ;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+input[type="radio"]{
+    display:none;
+}
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+.accordion input[type="radio"]:checked + label::before{
+    content: '-';
+}
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar  navbar-expand-lg bg-dark navbar-dark  fs-5 navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><a href="index.html"><img src = "logo.png" alt="logo" width="60" height="54" class="d-inline-block align-text-top"></a></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+        
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html"><h6>About Us</a></h6>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html"><h6>Insights</a></h6>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="industries.html"><h6>Industries</a></h6>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><h6>Services</a></h6>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactUs.html"><h6>Contact Us</a></h6>
+              </li>
+            </ul>
+             <!-- <div class ="searchbox">
+                <form class="d-flex">
+                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 </form>
+             </div> -->
+            </div>
+            
+      </nav>
+
+    
+      <br> <br>
+      <section class="about" id="about">
+        <div class="about-text  text-center container">
+          <h1 style="color: #E5B200; text-decoration-line: none;"class="service-title">Aberdeen Commercial Industries </h1>
+         <br> <p style="color: white;">At Aberdeen Commercial, leveraging our extensive industry expertise and seasoned experience, we specialize in pinpointing pivotal business challenges. Our commitment is to provide comprehensive end-to-end business transformations tailored specifically to address the unique needs and capitalize on the opportunities within your industry.</p>
+          
+        </div>
+
+      </section>
+      <h2 class="text-center my-5"> Industries We Serve</h2>
+
+<ul class="accordion ">
+    <li style="background: #121036;">
+        <input type="radio" name="accordion" id="first" checked>
+        <label style="color:white;"for="first">Oil and Gas</label>
+        <div class="content">
+            <p style="color: #E5B200;">At Aberdeen Commercial, our clients take precedence in our unwavering commitment to their success. Specializing in the oil and gas sector, our comprehensive commercial energy services include deal structuring, negotiation expertise, oil field operations support, and representation at crucial venture meetings. From crafting and reviewing commercial agreements to ensuring the legality and compliance of deals, our team streamlines processes to enhance quality and mitigate risks. In every aspect, we stand by our clients, offering strategic guidance and expertise to navigate the complexities of the industry with confidence.</p>
+        </div>
+    </li>
+    <li style="background: #121036;">
+        <input type="radio" name="accordion" id="second">
+        <label style="color:white;" for="second"> Law/Legal</label>
+        <div class="content">
+            <p style="color: #E5B200;">At Aberdeen Commercial, we recognize the vital need for our global clients to access top-tier legal and regulatory services. Our comprehensive Legal and Regulatory Services, including transaction strategy, deal negotiation, peer reviews, contract templates, general counsel support, law firm collaboration, and legal organization design, are tailored to navigate complexities, ensure compliance, and mitigate risks. We empower clients to achieve their objectives, seize opportunities, and secure positions of leadership in the global legal landscape. At Aberdeen Strategies, we redefine legal excellence to meet the diverse needs of our valued clients.</p>
+        </div>
+    </li>
+    <li style="background: #121036;">
+        <input type="radio" name="accordion" id="third">
+        <label style="color:white;" for="third">Technology, and IT Project Management</label>
+        <div class="content">
+          <p style="color: #E5B200;">Explore innovation with the Aberdeen Commercial IT Department, where cutting-edge solutions drive efficiency and performance. Our team proudly presents two exceptional products: AceTeam Pro and FCAS, designed to enhance administrative processes, human resources, collaboration, and communication. Additionally, our E-File Management System provides a seamless digital experience, ensuring a forward-thinking approach to information organization and retrieval. Elevate your business capabilities with Aberdeen Commercial's IT solutions. </p>
+           
+        </div>
+    </li>
+    <li style="background: #121036;">
+        <input type="radio" name="accordion" id="fourth">
+        <label style="color:white;"  for="fourth">Training & Development</label>
+        <div class="content">
+            <p style="color: #E5B200;">From the onset of our operations, we have been shaped by a noble quest; to be the ‘Engineer of choice’ for our community of clients, thrive as a truly global Energy Consultant, and provide professional training with certifications; mentorships via the establishment of an Aberdeen Commercial Institute.
+                At Aberdeen Commercial, we have a list of special programmes lined up for the overall development of talents and transformation into experts and industry leaders. 
+               <br> <br><a style='text-decoration: none; color: white;'href="https://aberdeencommercial.com/academy/"><button type="button" class="btn btn-primary">Visit Site</a></button></p>
+        </div>
+    </li>
+    <li style="background: #121036;">
+        <input type="radio" name="accordion" id="fifth">
+        <label style="color:white;"  for="fifth">Architecture & Construction</label>
+        <div class="content">
+            <p style="color: #E5B200;">We pride ourselves in the delivery of world-class at Aberdeen Fine Spaces, with aesthetically pleasing, unique, professional & functional interior/exterior designs for indoor work spaces, offices and building complexes.
+               </p>
+            
+
+        </div>
+    </li>
+    <li style="background: #121036;">
+      <input type="radio" name="accordion" id="fifth">
+      <label style="color:white;"  for="fifth">Health, Telecommunications</label>
+      <div class="content">
+          <p style="color: #E5B200;">We pride ourselves in the delivery of world-class at Aberdeen Fine Spaces, with aesthetically pleasing, unique, professional & functional interior/exterior designs for indoor work spaces, offices and building complexes.
+             </p>
+          
+
+      </div>
+  </li>
+</ul>
+    
+
+<br> <br>
+<footer class="py-5">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-6">
+      <div class="single-box">
+        <img src="logo.png" alt="">
+        
+<form>
+<h6 style="color: white">Subscribe to our newsletter</h6>
+<br>
+<div class="input-group gap-2 mb-3">
+<input type="text" class="form-control" placeholder="e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+<button class="btn btn-warning" type="button" id="button-addon2">Subscribe</button>
+</div>
+</form>
+      </div>
+    </div>
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Services</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="commercialenergy.html" class="nav-link p-0 text-muted">Commercial Energy</a></li>
+        <li class="nav-item mb-2"><a href="legal&regulatory.html" class="nav-link p-0 text-muted">Legal& Regulatory</a></li>
+        <li class="nav-item mb-2"><a href="ContractandProcurement.html" class="nav-link p-0 text-muted">Contracting and Procurement</a></li>
+        <li class="nav-item mb-2"><a href="capitalprojectassurance.html" class="nav-link p-0 text-muted">Capital Project Assurance</a></li>
+        <li class="nav-item mb-2"><a href="costestimation.html" class="nav-link p-0 text-muted">Cost Estimation</a></li>
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Links</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="blog.html" class="nav-link p-0 text-muted">Insights</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Team</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Products</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Press Release</a></li>
+       
+      </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+      <h5>Contact Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="ContactUs.html" class="nav-link p-0 text-muted">Contact</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quote</a></li>
+            </ul>
+    </div>
+  </div>
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    
+    <p style="color: white;">© Aberdeen Commercial Group <script>document.write(new Date().getFullYear());</script> </p><p style="color: white;">Privacy policy</p> <p style="color: white;">Term of Use</p>
+    <ul class="list-unstyled d-flex">
+      <li><a href=""> <img src="Facebook.png" alt="Facebook"></a> &nbsp; &nbsp; </li>
+      <li><a href=""> <img src="Twitter.png" alt="Twitter"></a>  &nbsp; &nbsp; </li>
+      <li><a href=""> <img src="Instagram.png" alt="Facebook"></a> &nbsp; &nbsp;  </li>
+      <br><h5>Follow Us</h5>
+      
+    </ul>
+  </div>
+  </div>
+  </div>
+  
+</footer>
+<script>
+  var copy = document.querySelector(".logos.slide").cloneNode(true);
+  document.querySelector('.logos').appendChild(copy);
+  </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+
+</body>
+</html>
